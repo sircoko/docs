@@ -3,7 +3,7 @@ Bienvenido
 
 El manual de CakePHP, es un proyecto de documentación abierto, editable y
 mantenido por la comunidad. Esperamos mantener un alto nivel de calidad, validez
-y precisión de la documentación.
+y precisión de la documentación. Note el botón "Improve this Doc" en la esquina superior derecha; el mismo te llevará al editor online de la página actual en GitHub, permitiendo que puedas contribuir agregando, eliminando o corrigiendo la documentación.
 
 .. container:: offline-download
 
