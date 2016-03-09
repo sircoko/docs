@@ -1,4 +1,4 @@
-Associations: Linking Models Together
+Asociaciones: Vinculando los modelos
 #####################################
 
 Una de las herramientas más poderosas de CakePHP es la capacidad de crear tablas relacionales en el modelo. En CakePHP, los vínculos entre modelos son manejados a través de asociaciones. 
@@ -9,7 +9,7 @@ El propósito de esta sección es mostrar como planear, definir y utilizar las a
 
 Aunque los datos pueden venir de diferentes fuentes, la manera más común de almacenar los datos en las aplicaciones web es por medio de bases de datos relacionales. Gran parte de lo que esta sección pretende cubrir está pensada bajo esa premisa. 
 
-Para información sobre las asociaciones con los modelos de Plugins, por favor refierase a :ref:`plugin-models`.
+Para información sobre las asociaciones con los modelos de Plugins, por favor refiérase a :ref:`plugin-models`.
 
 Tipos de Relaciones
 -------------------
@@ -19,17 +19,17 @@ Los cuatro tipos de asociaciones en CakePHP son: hasOne, hasMany, belongsTo y ha
 =============== ===================== =======================================
 Relación        Tipo de Asociación    Ejemplo
 =============== ===================== =======================================
-uno a uno       hasOne                Un usuario tiene un perfil.
+uno a uno       hasOne                Un usuario **tiene** un perfil.
 --------------- --------------------- ---------------------------------------
-uno a muchos    hasMany               Un usuario puede tener muchas recetas.
+uno a muchos    hasMany               Un usuario puede **tener muchas** recetas.
 --------------- --------------------- ---------------------------------------
-muchos a uno    belongsTo             Muchas recetas pertenecen a un usuario
+muchos a uno    belongsTo             Muchas recetas **pertenecen** a un usuario
 --------------- --------------------- ---------------------------------------
-muchos a muchos hasAndBelongsToMany   Una receta tiene y pertenece a muchos ingredientes.
+muchos a muchos hasAndBelongsToMany   Una receta **tiene y pertenece a muchos** ingredientes.
 =============== ===================== =======================================
 
 Para aclarar mejor la manera en la que se definen las asociaciones en los modelos: 
-Si la tabla del modelo contiene la clave foránea (otro_modelo_id), este modelo **siempre* va a **pertenecer**(belongTo) a otro modelo. 
+Si la tabla del modelo contiene la clave foránea (otro_modelo_id), este modelo **siempre** va a **pertenecer** (belongsTo) a otro modelo. 
 Las asociaciones se definen creando una variable de la clase, que tendrá el nombre del tipo de asociación que está definiendo. Esta variable puede ser una simple cadena de caracteres o puede ser un arreglo multidimensional que permita definir asociaciones más específicas.
 
 ::
